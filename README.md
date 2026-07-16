@@ -124,7 +124,7 @@ firebase-smart-rover
 ## 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/firebase-smart-rover.git
+git clone https://github.com/SushanKumar07/2WD_Car.git
 ```
 
 ---
