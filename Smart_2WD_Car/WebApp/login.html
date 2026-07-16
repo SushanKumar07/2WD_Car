@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rover Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+    <h1 id="formTitle">Login to Rover</h1>
+    
+    <div class="form-group">
+      <input type="email" id="email" placeholder="Email Address" required>
+      <input type="password" id="password" placeholder="Password" required>
+    </div>
+
+    <button class="btn auth-btn" id="submitBtn">Login</button>
+    
+    <div class="status" style="margin-top: 15px;">
+      <span id="authError" style="color: #d9534f; display: none;"></span>
+    </div>
+
+    <p class="toggle-text">
+      <span id="toggleMsg">Don't have an account?</span> 
+      <a href="#" id="toggleLink">Register here</a>
+    </p>
+  </div>
+
+  <script type="module" src="auth.js"></script>
+</body>
+</html>

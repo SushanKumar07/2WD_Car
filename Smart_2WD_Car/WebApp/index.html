@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Rover Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+    <h1>Rover Control</h1>
+    <a href="#" id="logoutBtn" style="color: #d9534f; font-size: 0.85rem; text-decoration: none; display: block; margin-bottom: 20px;">Logout</a>
+    <div class="slider-container">
+      <div class="slider-label">
+        <span>Motor Speed</span>
+        <span id="speedValue">200</span>
+      </div>
+      <input type="range" id="speedSlider" min="0" max="255" value="200">
+    </div>
+
+    <div class="d-pad">
+      <button class="btn" id="btn-Q" data-cmd="Q">↶ Q</button>
+      <button class="btn" id="btn-W" data-cmd="W">W ▲</button>
+      <button class="btn" id="btn-E" data-cmd="E">E ↷</button>
+      
+      <button class="btn" id="btn-A" data-cmd="A">A ◀</button>
+      <button class="btn" id="btn-S" data-cmd="S">S ▼</button>
+      <button class="btn" id="btn-D" data-cmd="D">D ▶</button>
+    </div>
+
+    <div class="status">
+      <span class="dot" id="statusDot"></span>
+      <span id="statusText">System Ready</span>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
